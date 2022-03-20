@@ -6,6 +6,8 @@ function getWords() {
         getContentAJAX(input, link);
     } else if (input != "" && event.keyCode == 13) {
         getContentAJAX(input, link, true);
+    } else {
+        document.getElementById('oplist').innerHTML = '';
     }
 
 }
