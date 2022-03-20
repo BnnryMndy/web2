@@ -16,7 +16,8 @@ function setShareableURL(pageId) {
     console.log(window.location.href);
     var currUrl = new URL(window.location.href);
     currUrl.searchParams.set('page_id', page_id);
-    window.location.href = currUrl;
+    window.history.pushState("object or string", "Читалка", currUrl);
+    loadContent();
 }
 
 function loadContent() {
