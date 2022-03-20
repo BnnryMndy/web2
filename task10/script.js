@@ -34,12 +34,6 @@ function reachedEnd() {
     getContentAJAX(newPage);
 }
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
-        reachedEnd();
-    }
-});
-
 function getContentAJAX(page_id) {
     var httpRequest;
     var link = location.protocol + '//' + location.host + location.pathname + "pages/glava" + page_id + ".html";
@@ -64,5 +58,15 @@ function getContentAJAX(page_id) {
     httpRequest.send(null);
 }
 
+function checkEnd() {
+    var A = Math.max(
+        document.body.scrollHeight, document.documentElement.scrollHeight,
+        document.body.offsetHeight, document.documentElement.offsetHeight,
+        document.body.clientHeight, document.documentElement.clientHeight
+    );
+    var B = window.pageYOffset || document.documentElement.scrollTop;
+    var C = document.documentElement.clientHeight;
+    if (A <= B + C + 200) reachedEnd();
+}
 
 document.onload = loadContent();
