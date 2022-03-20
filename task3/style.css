@@ -1,0 +1,150 @@
+h1 {
+    /* font */
+    font-family: Georgia;
+    font-size: 60px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 88px;
+    font-style: italic;
+    color: #50372b;
+    /* logo image */
+    background: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 166px;
+    height: 177px;
+    background-position: center;
+    padding-left: 60px;
+    width: 100%;
+    word-spacing: 60px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    flex-grow: 0;
+    opacity: 0.3;
+    font-family: Arial;
+    font-size: 21px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #000000;
+}
+
+main {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+nav {
+    height: 49px;
+    background: linear-gradient(#b28543, #b27823);
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li a {
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 17px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: dashed;
+}
+
+.first-article {
+    /* margin: auto; */
+    margin-top: 40px;
+    max-width: 900px;
+    width: auto;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.first-article article {
+    display: grid;
+    grid-template-areas: "h2 h2" "p img";
+    grid-template-columns: auto-fill 1fr;
+    grid-template-rows: auto-fill 1fr;
+}
+
+.other-articles {
+    display: grid;
+    grid-template-areas: "h2 h2 h2" "p p p";
+    grid-template-columns: auto-fill auto-fill auto-fill;
+    grid-template-rows: auto-fill auto-fill auto-fill;
+    border-bottom: 10px solid #6b6b6b;
+}
+
+article h2 {
+    grid-area: h2;
+    font-family: Georgia;
+    font-size: 30px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: italic;
+    color: #50372b;
+}
+
+article p {
+    grid-area: p;
+    padding-right: 10%;
+    opacity: 0.65;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+article img {
+    grid-area: img;
+    width: 301px;
+    height: 231px;
+    opacity: 0.74;
+}
+
+footer {
+    /* margin-left: 20%; */
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+footer h2 {
+    font-family: Georgia;
+    font-size: 32px;
+    line-height: 9px;
+    font-weight: 400;
+    font-style: italic;
+    color: #6a6a6a;
+    /* */
+}
+
+footer p {
+    opacity: 0.69;
+    font-family: Arial;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 400;
+    color: #6a6a6a;
+    width: 45%;
+}
+
+body {
+    max-width: 1000px;
+    margin: auto;
+}
