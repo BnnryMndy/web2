@@ -1,0 +1,13 @@
+.content {
+    width: 80%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.option-list {
+    width: 100%;
+}
+
+.option-list button {
+    width: 100%;
+}
