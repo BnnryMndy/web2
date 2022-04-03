@@ -8,6 +8,9 @@ function getWords() {
         getContentAJAX(input, link, true);
     } else {
         document.getElementById('oplist').innerHTML = '';
+
+        document.getElementById('transcription').innerHTML = "";
+        document.getElementById('ru-word').innerHTML = "";
     }
 
 }
@@ -26,6 +29,8 @@ function uploadDroplist(input, content, isGetTranslate) {
     var regex = new RegExp(input + "[a-z' ]* \\[[' a-z]*\\] [\.\,\-\_\'\"\@\?\!\:\$ a-zA-Z0-9А-Яа-я()]*", "gmu");
     var newContentArr = content.match(regex);
     document.getElementById('oplist').innerHTML = '';
+    document.getElementById('transcription').innerHTML = "";
+    document.getElementById('ru-word').innerHTML = "";
     if (isGetTranslate) {
         getTranslate(newContentArr[0]);
     } else
@@ -61,3 +66,9 @@ function getContentAJAX(input, link, isGetTranslate = false) {
     httpRequest.open('GET', link, true);
     httpRequest.send(null);
 }
+
+function clearTranslate() {
+
+}
+
+document.getElementById('en-word').onblur
