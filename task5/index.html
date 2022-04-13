@@ -8,6 +8,8 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+
     <link rel="shortcut icon" href="/task5/img/logo_img.png" type="image/x-icon">
     <title>CARSRENTAL</title>
 </head>
@@ -53,7 +55,7 @@
     <main class="container">
         <!-- first screen blcok -->
         <div class="first-screen">
-            <form action="">
+            <form action="/">
                 <div class="decoration">
                     <img src="/task5/img/left_arrow_shadow.png" alt="" class="left-arrow-shadow">
                     <img src="/task5/img/left_arrow.png" alt="" class="left-arrow">
@@ -75,18 +77,18 @@
                             <div class="label-left">
                                 Pick-up date
                             </div>
-                            <input id="pic-date" type="date" name="">
+                            <input id="pic-date-from" type="date" name="pic-date-from">
                         </div>
                         <div class="group-select">
                             <div class="label-right">
                                 Pick-up time
                             </div>
-                            <select name="" id="pic-time">
+                            <select name="pic-time-from" id="pic-time-from">
                                 <option value="01">01</option>
                                 <option value="02">02</option>
                             </select>
 
-                            <select name="" id="pic-min">
+                            <select name="pic-min-from" id="pic-min-from">
                                 <option value="">00</option>
                             </select>
                         </div>
@@ -99,19 +101,19 @@
                             <div class="label-left">
                                 Return date
                             </div>
-                            <input id="pic-date" type="date" name="">
+                            <input id="pic-date-to" type="date" name="pic-date-to">
                         </div>
                         <div class="group-select">
                             <div class="label-right">
                                 Return time
                             </div>
-                            <select name="" id="pic-time">
+                            <select name="pic-time-to" id="pic-time-to">
                                 <option value="01">01</option>
                                 <option value="02">02</option>
                             </select>
 
-                            <select name="" id="pic-min">
-                                <option value="">00</option>
+                            <select name="pic-min-to" id="pic-min-to">
+                                <option value="0">00</option>
                             </select>
                         </div>
                     </div>
@@ -120,8 +122,8 @@
                 <div class="form-control">
                     <div class="input-group">
                         <label for="car-type">Car type</label>
-                        <select class="full-form" name="" id="car-type">
-                            <option value=""></option>
+                        <select class="full-form" name="car-type" id="car-type">
+                            <option value="0">$nbsp;</option>
                         </select>
                     </div>
                 </div>
