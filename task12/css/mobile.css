@@ -1,0 +1,125 @@
+@media (max-width: 480px) {
+    html {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .container {
+        margin: 0px;
+        width: 100%;
+    }
+    .splash-top {
+        display: none;
+    }
+    h1 {
+        background-image: none;
+        width: 0px;
+        height: 0px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .logo h2 {
+        margin: auto;
+        font-size: 30px;
+    }
+    .logo h3 {
+        display: none;
+    }
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        /* display: block; */
+    }
+    .decoration {
+        display: none;
+        height: 0px;
+        width: 0px;
+    }
+    .take-tour {
+        display: none;
+        height: 0px;
+        width: 0px;
+    }
+    form {
+        /* margin: auto; */
+        /* width: 80%; */
+        padding: 0px;
+    }
+    form button {
+        width: 100%;
+    }
+    .first-screen {
+        background-image: none;
+        background-color: #211d1a;
+        width: 100%;
+    }
+    .pics {
+        display: flex;
+        flex-direction: column;
+    }
+    .delimeter {
+        /* background-image: url('/task5/img/horizontal_dividor.png'); */
+        background-color: #e7e7e7;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        opacity: 0.54;
+        height: 42px;
+        max-width: 100%;
+    }
+    .pics .pic {
+        width: 80%;
+        background-repeat: no-repeat;
+        /* height: 100%; */
+        margin: auto;
+        margin-bottom: 4px;
+    }
+    .pic3-botton-sublabel {
+        margin-right: 70px;
+    }
+    .save-up-block {
+        margin-left: 50%;
+    }
+    .articles {
+        flex-direction: column;
+        margin: auto;
+        padding: 5px;
+        width: 80%;
+    }
+    .articles article {
+        margin: auto;
+        width: 100%;
+    }
+    .background-image {
+        background-image: none;
+    }
+    nav ul li {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        margin: 0px;
+    }
+    header.container {
+        width: 100%;
+    }
+    ul {
+        margin-left: 0px;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        padding-inline-start: 0px;
+    }
+    .delimeter img {
+        width: 100%;
+    }
+    article img:not(.link-with-icon img) {
+        width: 100%;
+    }
+}

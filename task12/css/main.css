@@ -1,0 +1,817 @@
+html {
+    margin: 0;
+    padding: 0;
+    /* background-color: #e7e7e7; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+}
+
+.background-image {
+    background-image: url('/task5/img/main_background.png');
+    opacity: 0.2;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+/* import fonts */
+
+@font-face {
+    font-family: 'DIN Mittelschrift Std';
+    src: url('/task5/fonts/DINMittelschriftStd.otf');
+}
+
+@font-face {
+    font-family: 'Kievit';
+    src: url('/task5/fonts/Kievit_Regular.pfm');
+}
+
+@font-face {
+    font-family: 'Kievit bold';
+    src: url('/task5/fonts/Kievit_Black.pfm');
+}
+
+.container {
+    max-width: 1030px;
+    margin: auto;
+}
+
+.splash-top {
+    background-color: #898079;
+    width: 100%;
+    height: 32px;
+    padding-top: 15px;
+}
+
+.splash-top span {
+    font-family: 'DIN Mittelschrift Std';
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.follow-us {
+    display: flex;
+    align-items: center;
+}
+
+.splash-top span img.social-image {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.splash-top span a {
+    text-decoration: none;
+    color: #94c4cb;
+}
+
+.splash-top button {
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.11);
+}
+
+.splash-top button img {
+    width: 6px;
+    height: 5px;
+}
+
+h1 {
+    display: block;
+    /* определяем контейнер */
+    width: 111px;
+    height: 59px;
+    background: url('/task5/img/logo_img.png');
+    /* далее используем одно из определений */
+    text-indent: -10000px;
+}
+
+h2.carsrental {
+    font-family: 'Kievit bold';
+    font-size: 60px;
+    line-height: 13px;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    font-weight: 400;
+    color: #000000;
+}
+
+h2.carsrental span {
+    font-weight: 900;
+    color: #298997;
+}
+
+h1 {
+    margin-right: -45px;
+    margin-top: 40px;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3 {
+    opacity: 0.5;
+    font-family: 'DIN Mittelschrift Std';
+    font-size: 12px;
+    line-height: 9px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #211d1a;
+    margin-left: -275px;
+    margin-top: 85px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    align-self: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    width: 89px;
+    height: 40px;
+    box-shadow: 2px 4px 0px 0px rgba(0, 0, 0, 0.11);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin-right: 20px;
+    border-left: #80b300 1px solid;
+}
+
+nav ul li a {
+    font-family: Kievit;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 13px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #15161a;
+    margin: auto;
+}
+
+.pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e7e7e7;
+    width: 100%;
+    padding-bottom: 21px;
+}
+
+.pics .pic {
+    width: 32%;
+    height: 285px;
+}
+
+.pics .pic#pic1 {
+    background-image: url("/task5/img/woman_with_keys.png");
+}
+
+.pics .pic#pic2 {
+    background-image: url("/task5/img/navigator.png");
+}
+
+.pics .pic#pic3 {
+    background-image: url("/task5/img/yellow_car.png");
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: solid #90877e 10px;
+}
+
+.articles article {
+    width: 30%;
+}
+
+footer {
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    width: fit-content;
+    text-align: center;
+    font-family: Arial;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000000;
+    /*
+Text styles for "Copyright © Cars Rentals. All rights reserved."
+*/
+    font-size: 12px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+}
+
+input {
+    background-color: #3a3633;
+    color: #eae9e5;
+}
+
+#discount-block {
+    width: 114px;
+    height: 95px;
+    margin-top: 24px;
+    margin-left: 22px;
+    box-shadow: 2px 4px 0px 0px rgba(0, 0, 0, 0.14);
+    transform: rotate(-15deg);
+    mix-blend-mode: overlay;
+    background-color: yellow;
+}
+
+.first-screen {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 493px;
+    background-color: #e7e7e7;
+    background-image: url("/task5/img/form_image.png");
+}
+
+form {
+    width: 335px;
+    padding-left: 21px;
+    padding-right: 31px;
+}
+
+label {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+select {
+    background-color: #3a3633;
+    color: #eae9e5;
+}
+
+#pic-up-loc {
+    width: 280px;
+    height: 30px;
+}
+
+.form-title {
+    padding-top: 26px;
+    font-family: 'Kievit';
+    font-size: 29px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #ebebeb;
+}
+
+.form-title span {
+    color: #80b300;
+}
+
+.form-subtitle {
+    opacity: 0.5;
+    font-family: 'DIN Mittelschrift Std';
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ebebeb;
+}
+
+form button {
+    font-family: 'DIN Mittelschrift Std';
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #03212c;
+    width: 141px;
+    height: 32px;
+    background-color: #ffffff;
+    background-image: linear-gradient(-9.0deg, rgba(145, 145, 145, 0.28) 17%, rgba(145, 145, 145, 0.0) 82%);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+form label {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.label-left {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.label-right {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+form input[type="text"].full-form {
+    width: 280px;
+    height: 28px;
+}
+
+form input[type="date"] {
+    width: 114px;
+    height: 30px;
+}
+
+form select {
+    width: 73px;
+    height: 33px;
+}
+
+form select.full-form {
+    width: 284px;
+    height: 33px;
+}
+
+.form-control {
+    margin-bottom: 18px;
+}
+
+.form-labels {
+    display: flex;
+}
+
+.group-input {
+    display: flex;
+    width: 287px;
+    justify-content: space-between;
+}
+
+.input-right {
+    width: 133px;
+    height: 30px;
+}
+
+.form-control {
+    width: 287px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#promo-group {
+    display: flex;
+    align-items: center;
+}
+
+.delimeter {
+    /* background-image: url('/task5/img/horizontal_dividor.png'); */
+    background-color: #e7e7e7;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity: 0.54;
+    height: 42px;
+}
+
+.left-arrow {
+    margin-left: -35px;
+    margin-top: 25px;
+    position: absolute;
+}
+
+.left-arrow-shadow {
+    margin-left: -39px;
+    margin-top: 39px;
+    position: absolute;
+    z-index: 900;
+}
+
+.take-tour {
+    width: 430px;
+    height: 55px;
+    text-align: right;
+    padding-top: 5px;
+    background-image: url('/task5/img/text_background.png');
+}
+
+.take-tour-label {
+    margin-right: 20px;
+    text-align: right;
+    font-family: 'Kievit bold';
+    font-size: 31px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+}
+
+.take-tour-sublabel {
+    margin-right: 20px;
+    opacity: 0.5;
+    font-family: 'DIN Mittelschrift Std';
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #ebebeb;
+}
+
+.decoration-right-arrows {
+    margin-top: -85px;
+    margin-right: -12px;
+}
+
+.right-arrow-shadow {
+    margin-right: -5px;
+    margin-bottom: 16px;
+}
+
+.right-arrow {
+    margin-right: -19px;
+}
+
+.pic1-sublabel {
+    margin-left: 8px;
+    opacity: 0.8;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    font-family: 'Trade Gothic';
+    font-size: 10px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+}
+
+#pic1h2 {
+    font-family: 'Trade Gothic';
+    font-size: 26px;
+    margin-left: 8px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+}
+
+#discount {
+    opacity: 0.5;
+    font-family: 'Trade Gothic';
+    font-size: 21px;
+    line-height: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+#discount-30 {
+    /* background-image: linear-gradient(0.0deg, rgba(0, 0, 0, 0.28) 0%, rgba(255, 255, 255, 0.28) 100%); */
+    height: 100%;
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    font-family: 'DIN Mittelschrift Std';
+    margin-top: 26px;
+    font-size: 84px;
+    line-height: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.06em;
+    color: #000000;
+}
+
+.save-up-block {
+    width: 119px;
+    height: 102px;
+    transform: rotate(15deg);
+    margin-top: 26%;
+    margin-left: 59%;
+    background-color: #bcff8e;
+    box-shadow: 2px 4px 0px 0px rgba(0, 0, 0, 0.14);
+}
+
+.save-up-label {
+    opacity: 0.5;
+    font-family: 'Trade Gothic';
+    font-size: 21.5px;
+    line-height: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+.save-up-25 {
+    font-family: 'DIN Mittelschrift Std';
+    font-size: 84px;
+    line-height: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.06em;
+    color: #000000;
+    margin-top: 35px;
+}
+
+.save-up-main-sublabel {
+    opacity: 0.87;
+    font-family: 'Trade Gothic';
+    font-size: 11.1px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    margin-left: 13px;
+    margin-top: 13px;
+}
+
+.save-main-label {
+    font-family: 'Trade Gothic';
+    font-size: 34px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    margin-left: 13px;
+    margin-top: -3px;
+}
+
+.pic3-top-sublabel {
+    opacity: 0.87;
+    font-family: 'Trade Gothic';
+    font-size: 11.1px;
+    line-height: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
+.pic3-main-label {
+    font-family: 'Trade Gothic';
+    font-size: 29px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    margin-left: 8px;
+    margin-top: -6px;
+}
+
+.pic3-botton-sublabel {
+    mix-blend-mode: soft-light;
+    /* Blend mode: soft-light; */
+    font-family: 'Trade Gothic';
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: -7px;
+}
+
+.make-a-res-block {
+    transform: rotate(-15deg);
+    width: 118px;
+    height: 97px;
+    background-color: #62ffff;
+    box-shadow: 2px 4px 0px 0px rgba(0, 0, 0, 0.14);
+    margin-top: -1%;
+    margin-left: 6%;
+}
+
+.make-a-res-label {
+    opacity: 0.5;
+    font-family: 'Trade Gothic';
+    font-size: 17.5px;
+    line-height: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+.make-a-res-now {
+    /*  background-image: linear-gradient(0.0deg, rgba(0, 0, 0, 0.28) 0%, rgba(255, 255, 255, 0.28) 100%); */
+    font-family: 'DIN Mittelschrift Std';
+    font-size: 53px;
+    line-height: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.06em;
+    color: #000000;
+    margin-top: 16px;
+}
+
+#fetured-services {
+    font-family: 'Kievit';
+    font-size: 28px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    /* color: #81b29e; */
+    /*
+Text styles for "SERVICES"
+*/
+    font-weight: 500;
+    color: #211d1a;
+}
+
+#featured {
+    font-family: 'Kievit';
+    font-size: 28px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #81b29e;
+    /*
+Text styles for "SERVICES"
+*/
+    /* font-weight: 500; */
+    /* color: #211d1a; */
+}
+
+.article-header {
+    border-left: 4px solid #90877e;
+    padding-left: 4px;
+    margin-bottom: 10px;
+}
+
+.subh2 {
+    margin-top: -18px;
+    opacity: 0.5;
+    font-family: 'DIN Mittelschrift Std';
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    padding-bottom: 5px;
+}
+
+article p {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: italic;
+    /* color: #298998; */
+    /*
+Text styles for "aliquet, velit ac semper iaculis, mi odio dignissim diam, id dapibus eros metus id nisi. Nulla ligula. Cum sociis natoque penatibus et "
+*/
+    font-weight: 400;
+    font-style: normal;
+    color: #90877e;
+}
+
+article p span {
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    font-style: italic;
+    color: #298998;
+}
+
+.link-with-icon {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    color: #787068;
+}
+
+.link-with-icon img {
+    margin-right: 12px;
+}
+
+#why-choose-us {
+    font-family: 'Kievit';
+    font-size: 28px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    /* color: #84b607; */
+    /*
+Text styles for "CHOOSE US?"
+*/
+    font-weight: 500;
+    color: #211d1a;
+}
+
+#why-choose-us span {
+    font-family: 'Kievit';
+    font-size: 28px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #84b607;
+}
+
+#customer-care {
+    font-family: 'Kievit';
+    font-size: 28px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    /* color: #5ea547; */
+    /*
+    Text styles for "CARE"
+    */
+    font-weight: 500;
+    color: #211d1a;
+}
+
+#customer-care span {
+    font-family: 'Kievit';
+    font-size: 28px;
+    line-height: 21px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    color: #5ea547;
+}
+
+.link-with-number {
+    display: flex;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    /* font-style: italic; */
+    /* text-decoration: underline; */
+    color: #787068;
+    /*
+Text styles for "iaculis, mi odio dignissim diam, Quisque ut magna et nisi bibendum sagittis. "
+*/
+    font-style: normal;
+    text-decoration: none;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.text {
+    width: 80%;
+}
+
+.linked {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.number {
+    font-family: 'DIN Mittelschrift Std';
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #8cbb18;
+    width: 35px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+}
