@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (min-width: 481px) and (max-width: 1024px) {
     html {
         width: 100%;
         margin: 0px;
@@ -9,19 +9,24 @@
         width: 100%;
     }
     .splash-top {
-        display: none;
+        /* display: none; */
+        /* font-size: 12px; */
+        height: auto;
+        height: 33px;
+        padding-top: 11px;
     }
-    h1 {
-        background-image: none;
-        width: 0px;
-        height: 0px;
+    .splash-top span {
+        margin: auto;
+    }
+    .follow-us {
+        display: none;
     }
     .logo {
         display: flex;
         justify-content: center;
     }
     .logo h2 {
-        margin: auto;
+        padding: 30px;
         font-size: 30px;
     }
     .logo h3 {
@@ -45,8 +50,7 @@
         width: 0px;
     }
     form {
-        /* margin: auto; */
-        /* width: 80%; */
+        margin: auto;
         padding: 0px;
     }
     form button {
@@ -73,7 +77,8 @@
     .pics .pic {
         width: 80%;
         background-repeat: no-repeat;
-        /* height: 100%; */
+        background-size: cover;
+        background-position: center;
         margin: auto;
         margin-bottom: 4px;
     }
@@ -81,6 +86,7 @@
         margin-right: 70px;
     }
     .save-up-block {
+        margin-top: 20%;
         margin-left: 50%;
     }
     .articles {
@@ -95,6 +101,9 @@
     }
     .background-image {
         background-image: none;
+    }
+    .save-up-main-sublabel {
+        /* margin-top: -5%; */
     }
     nav ul li {
         width: 100%;
@@ -117,9 +126,6 @@
         padding-inline-start: 0px;
     }
     .delimeter img {
-        width: 100%;
-    }
-    article img:not(.link-with-icon img) {
         width: 100%;
     }
 }
