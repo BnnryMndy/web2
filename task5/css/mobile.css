@@ -45,9 +45,12 @@
         width: 0px;
     }
     form {
-        /* margin: auto; */
+        margin: auto;
         /* width: 80%; */
         padding: 0px;
+    }
+    form div {
+        margin: auto;
     }
     form button {
         width: 100%;
@@ -73,7 +76,8 @@
     .pics .pic {
         width: 80%;
         background-repeat: no-repeat;
-        /* height: 100%; */
+        background-size: cover;
+        background-position: center;
         margin: auto;
         margin-bottom: 4px;
     }
